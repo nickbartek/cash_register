@@ -1,59 +1,7 @@
 function checkCashRegister(price, cash, cid) {
-  var empty=true;
-  let i=0; let arrcid=[];  var result=0
-   let arr=[10000,2000,1000,500,100,25,10,5,1]
-  var change=[["ONE HUNDRED"],["TWENTY"],["TEN"],["FIVE"],["ONE"],["QUARTER"],["DIME"],["NICKEL"],["PENNY"]];
-
- for(i=0; i<cid.length; i++){let a=cid[i][1]*100        //cannot  read  length of undefined
-arrcid.push(Math.round(a)) }
- arrcid=arrcid.reverse();     //no dot number in array
- //for(let j=0; j<cid.length; j++)
- function differ(price,cash){
-  result=(cash-price)*100; //console.log(cash-price)
-   return result}
  
- differ(price, cash)
+console.log(price,cash,cid)}
 
-//console.log(result)
-//console.log(arrcid)
-console.log(rest())
-function rest(i){
-  
-  for(var j=0; j<arr.length; j++){
-  if(arr[j]<result || arrcid[j]*100!==0){
-    //console.log(result,"   cid",arrcid[j],"   arr[j]",arr[j],j)
-    let charge=0
-  while(result>=arr[j] && arrcid[j]>0){
-          charge=charge+arr[j]
-          arrcid[j]=arrcid[j]-arr[j]
-          result=result-arr[j]
-  console.log(result,"cid[j][1]",arrcid[j],j,"  arr[j]",arr[j])
-    }
-    console.log("arrcid",arrcid[j],j)
-  if(arrcid[j]!==0){empty=false}
-  change[j].push(charge/100)    }
-  
-//else{console.log(result,cid[j][1])}
-}}
-console.log(arrcid)
-console.log(change,empty)
+checkCashRegister(30,100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
 
-if(result===0 && empty==true)return {status:"CLOSED"}
-
-if (result===0){let changeopen=[]
-for(let k=0; k<change.length; k++){
-if(change[k][1]){  changeopen.push(change[k])
-//changeopen=changeopen.reverse();
-//console.log("change",change[k],result,changeopen,cid)
-}}return {status:"OPEN", change: changeopen}}
-
-
-if(result>0)return{status:"INSUFFICIENT_FUNDS", change:[]}
-return change;}
-
-
-
-
-//checkCashRegister(30,100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
-
-checkCashRegister(19.5, 20 [["PENNY", 0.5],["NICKEL",0],["DIME",0],["QUARTER",0],["ONE",0],["FIVE",0],["TEN",0]])
+checkCashRegister(19.5, 20 [["PENNY", 0.5],["NICKEL",0],["DIME",0],["QUARTER",0],["ONE",0],["FIVE",0],["TEN",0],["TWENTY",0],["ONE HUNDRED",0]])
