@@ -4,7 +4,7 @@ function checkCashRegister(price, cash, cid) {
    let arr=[10000,2000,1000,500,100,25,10,5,1]
   var change=[["ONE HUNDRED"],["TWENTY"],["TEN"],["FIVE"],["ONE"],["QUARTER"],["DIME"],["NICKEL"],["PENNY"]];
 
- for(i=0; i<cid.length; i++){let a=cid[i][1]*100
+ for(i=0; i<cid.length; i++){let a=cid[i][1]*100        //cannot  read  length of undefined
 arrcid.push(Math.round(a)) }
  arrcid=arrcid.reverse();     //no dot number in array
  //for(let j=0; j<cid.length; j++)
